@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieDB</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="/js/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="container">
+                <div class="navbar-wrap">
+                    <a href="#" class="logo navbar__logo">
+                        <img src="img/logo.svg" alt="logo" class="logo__text">
+                        <span class="logo__description">Знаем, что вам понравится</span>
+                    </a>
+                    <!-- /.logo navbar__logo -->
+                    <nav class="navbar__list">
+                        <ul>
+                            <li><a class="navbar__item" href="#">Главная</a></li>
+                            <li><a class="navbar__item" href="#">Подборки</a></li>
+                            <li><a class="navbar__item" href="#">По жанру</a></li>
+                            <li><a class="navbar__item" href="#">Фильмы</a></li>
+                            <li><a class="navbar__item" href="#">Сериалы</a></li>
+                            <li><a class="navbar__item" href="#">Мультфильмы</a></li>
+                            <li><a class="navbar__item" href="#">Аниме</a></li>
+                            <li><a class="navbar__item" href="#">Актеры</a></li>
+                        </ul>
+                    </nav>
+                    <form class="search"> 
+                        <div class="search__input">
+                            <input type="text" name="text" class="navbar__search" placeholder="Поиск по сайту!">
+                        </div>
+                    </form>
+                    <!-- /.navbar__search --> 
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.navbar -->
+        <div class="hero"></div>
+        <!-- /.hero -->
+    </header>
+    <!-- /.header -->
+    <hero class="hero">
+        <div class="background-items">
+            <div class="background-item"></div>
+            <div class="background-item"></div>
+            <div class="background-item"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero__wrap">
+                <div class="hero__left">
+                    <div class="hero__main">
+                        <div class="hero__banner">
+                            <!-- <img src="/img/banner.png" alt="banner"> -->
+                            <div class="hero__banner-categories"><span>Главная</span> / <span>Подборки</span> / <span class="last">Лучшие фильмы всех времен</span></div>
+                            <h1>Лучшие фильмы всех времен</h1>
+                        </div>
+                        <p>Мы собрали для Вас подборку лучших фильмов по теме “{название подборки}” с рейтингом от {минимальный рейтинг фильмов из подборки} и до {максимальный рейтинг фильмов из подборки}. В неё вошли фильмы следующих жанров: {жанр1}({число раз}), {жанр2}({число раз}), {жанр3}({число раз}). Самый новый фильм - {год} года, самый старый фильм - {год} года. Продолжительность фильмов от {минимальная продолжительность} до {максимальная продолжительность}. Выбирайте фильм и приятного просмотра!
+                        </p>
+                    </div>
+                    <div class="selection-moovies">
+                        <h1>Новые фильмы подборки</h1>
+                        <div class="selection-moovies__line"></div>
+                        <div class="selection-moovies__cards new__moovies">
+                            
+                        </div>
+                    </div>
+                    <div class="selection-moovies">
+                        <h1>Лучшие фильмы подборки</h1>
+                        <div class="selection-moovies__line"></div>
+                        <div class="selection-moovies__cards best__moovies">
+                            
+                        </div>
+                    </div>
+
+                    <div class="moovie-card">
+                        
+                    </div>
+                </div>
+                <!-- /.hero__left -->
+                <div class="hero__right">
+                    <div class="simmilar-collection">
+                        <div class="simmilar-collection__title">Похожие коллекции</div>
+                        <div class="simmilar-collection__movies">
+                            <div class="simmilar-collection__moovie">
+                                <img class="simmilar-collection__img" src="/img/moovies/moovie.png" alt="moovie">
+                                <div class="simmilar-collection__right">
+                                    <div class="simmilar-collection__date">
+                                        <img src="/img/clock.svg" alt="time">
+                                        <p>2 недели назад</p>
+                                    </div>
+                                    <div class="simmilar-collection__desc">
+                                        Задача организации, в особенности же новая формировании.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="simmilar-collection__moovie">
+                                <img class="simmilar-collection__img" src="/img/moovies/moovie.png" alt="moovie">
+                                <div class="simmilar-collection__right">
+                                    <div class="simmilar-collection__date">
+                                        <img src="/img/clock.svg" alt="time">
+                                        <p>2 недели назад</p>
+                                    </div>
+                                    <div class="simmilar-collection__desc">
+                                        Задача организации, в особенности же новая формировании.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="simmilar-collection__moovie">
+                                <img  class="simmilar-collection__img" src="/img/moovies/moovie.png" alt="moovie">
+                                <div class="simmilar-collection__right">
+                                    <div class="simmilar-collection__date">
+                                        <img src="/img/clock.svg" alt="time">
+                                        <p>2 недели назад</p>
+                                    </div>
+                                    <div class="simmilar-collection__desc">
+                                        Задача организации, в особенности же новая формировании.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="simmilar-collection__moovie">
+                                <img class="simmilar-collection__img" src="/img/moovies/moovie.png" alt="moovie">
+                                <div class="simmilar-collection__right">
+                                    <div class="simmilar-collection__date">
+                                        <img src="/img/clock.svg" alt="time">
+                                        <p>2 недели назад</p>
+                                    </div>
+                                    <div class="simmilar-collection__desc">
+                                        Задача организации, в особенности же новая формировании.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="simmilar-collection__moovie">
+                                <img class="simmilar-collection__img" src="/img/moovies/moovie.png" alt="moovie">
+                                <div class="simmilar-collection__right">
+                                    <div class="simmilar-collection__date">
+                                        <img src="/img/clock.svg" alt="time">
+                                        <p>2 недели назад</p>
+                                    </div>
+                                    <div class="simmilar-collection__desc">
+                                        Задача организации, в особенности же новая формировании.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="simmilar-collection">
+                        <div class="simmilar-collection__title">Популярные коллекции</div>
+                        <div class="simmilar-collection__movies">
+                            <div class="simmilar-collection__moovie">
+                                <img class="popular-moovie" src="/img/bg/popular-collection.png" alt="moovie">
+                                <div class="simmilar-collection__content">
+                                    <h3 class="simmilar-collection__desc-o">Лучшие сериалы 2015-2021 годов</h3>
+                                    <a class="button-watch" href="#">Смотреть</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.hero__right -->
+            </div>
+        </div>
+    </hero>
+    <!-- /.hero -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="footer-top">
+                    <div class="footer__logo logo">
+                        <img src="img/logo.svg" alt="logo" class="logo__text">
+                        <span class="logo__description logo-footer">Знаем, что вам понравится</span>
+                    </div>
+                    <div class="footer__block">
+                        <h2>Меню</h2>
+                        <span>
+                            <a href="#"><p class="footer__menu-item">Подборки</p></a>
+                            <a href="#"><p class="footer__menu-item">По жанру</p></a>
+                            <a href="#"><p class="footer__menu-item">Фильмы</p></a>
+                            <a href="#"><p class="footer__menu-item">Сериалы</p></a>
+                            <a href="#"><p class="footer__menu-item">Мультфильмы</p></a>
+                            <a href="#"><p class="footer__menu-item">Аниме</p></a>
+                            <a href="#"><p class="footer__menu-item">Актеры</p></a>
+                        </span>
+                    </div>
+                    <div class="footer__block">
+                        <h2>О нас</h2>
+                        <p>Зная всё о кино, хочется поделиться этим с другими. Делитесь фильмами, трейлерами, персонами и новостями в социальных сетях, присваивайте рейтинги фильмам и обсуждайте их с друзьями и подписчиками!
+
+                            Интересные фильмы, ближайшие кинотеатры и любимых актеров можно добавлять в «Избранное». Система покажет все связанные с ними новости и новые трейлеры, подскажет, когда можно купить билет в кино на интересующую премьеру. Присоединяйтесь!</p>
+                    </div>
+                </div>
+                <!-- /.footer-top -->
+                <div class="footer-bottom">
+                    <p>©Все права защищены 2021</p>
+                    <ul class="social-icons">
+                        <li><a class="social-icon-fb" href="#" title="..." target="_blank" rel="noopener"></a></li>
+                        <li><a class="social-icon-vk" href="#" title="..." target="_blank" rel="noopener"></a></li>
+                        <li><a class="social-icon-inst" href="#" title="..." target="_blank" rel="noopener"></a></li>
+                      </ul>
+                    <a href="#"><p>Политика конфиденциальности</p></a>
+                    
+                </div>
+                <!-- /.footer-bottom -->
+            </div>
+        </div>
+    </footer>
+    <!-- /.footer -->
+</body>
+</html>
